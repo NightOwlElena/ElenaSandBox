@@ -8,9 +8,10 @@ apt-get -y update
 apt-get -y install apache2 php
 apt-get -y install apache2 php
 
+cd /var/www/html/
 wget https://raw.githubusercontent.com/elenazzz2812/ElenaSandBox/master/example.php /var/www/html/
 wget https://raw.githubusercontent.com/elenazzz2812/ElenaSandBox/master/index.php /var/www/html/
-rm /var/www/html/index.html
+rm index.html
 # restart Apache
 apachectl restart
 
